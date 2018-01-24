@@ -1,7 +1,7 @@
 ## CIT 261 - Assignment Portal
 
-Lesson 01: Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays
-Lesson 02: Object Creation Functions, Inheritance, Properties, Methods, Instantiation
+-list Lesson 01: Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays
+-list Lesson 02: Object Creation Functions, Inheritance, Properties, Methods, Instantiation
 Lesson 03: JSON Parse, Stringify
 Lesson 04: Using XMLHTTPRequest to Consume a JSON Web Service
 Lesson 05: Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects
