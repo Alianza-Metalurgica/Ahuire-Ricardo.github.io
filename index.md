@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Ricardo Luis Ahuire Peña - CIT261
 
 You can use the [editor on GitHub](https://github.com/Ahuire-Ricardo/Ahuire-Ricardo.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
