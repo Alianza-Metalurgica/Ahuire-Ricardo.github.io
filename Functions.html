@@ -61,7 +61,142 @@
 		</script>
 
 	</head>
-	<body class="funtions">
+	
+	<body>
+    <section class="page-header">
+      <h1 class="project-name">Jacob Reed</h1>
+      <h2 class="project-tagline">CIT 261 | Spring 2015</h2>
+
+      <nav id="primary_nav_wrap">
+          <ul>
+            <li class="current-menu-item"><a href="http://reed-jacob.github.io">Home</a></li>
+            <li><a href="#">Topics</a>
+              <ul>
+                <li><a href="json.html">JSON</a></li>
+                <li><a href="js-objects.html">JavaScript Objects</a></li>
+                <li><a href="dom-manipulation.html">DOM Manipulation</a></li>
+                <li><a href="css3-transitions.html">CSS 3 Transitions</a></li>
+                <li><a href="css3-animations.html">CSS 3 Animations</a></li>
+                <li><a href="local-storage.html">Local Storage</a></li>
+                <li><a href="ajax.html">AJAX</a></li>
+              </ul>
+                </li>
+            <li><a href="team-meetings.html">Team Meetings</a>
+            </li>
+          </nav>
+
+
+    </section>
+
+    <section class="main-content">
+      <h1>JavaScript Objects</h1>
+        <h6>May 9th, 2015</h6>
+
+      <h2>What Are Objects?</h2>
+        <p>The simplest explanation for what a JavaScript object is comes from <a href="http://www.w3schools.com/js/js_objects.asp">w3schools</a>:</p>
+
+          <blockquote><p>In real life, a car is an <strong>object</strong>.</p>
+            <p>A car has properties like weight and color, and methods like start and stop:</p>
+
+              <table>
+                <tr>
+                <th style="width:370px">
+                Object
+                </th>
+                <th>
+                Properties
+                </th>
+                <th>
+                Methods
+                </th>
+                </tr>
+                <tr>
+                <td>
+                <img src="http://i.imgur.com/oTqrHl8.gif" style="width:368px;height:230px;">
+                </td>
+                <td>
+                <br>car.name = Fiat<br><br>
+                car.model = 500<br><br>
+                car.weight = 850kg<br><br>
+                car.color = white
+                </td>
+                <td>
+                <br>car.start()<br><br>
+                car.drive()<br><br>
+                car.brake()
+                <br><br>car.stop()</td>
+                </tr>
+              </table>
+
+              <p>All cars have the same <strong>properties</strong>, but the property values differ from car to car.</p>
+              <p>All cars have the same <strong>methods</strong>, but the methods are performed at different times.</p>
+        </blockquote>
+          
+        <p>JavaScript has a number of predefined objects. (Some can be found <a href="http://www.devx.com/projectcool/Article/19993">here</a>) Additionally, we are free to make our own objects. In order to create an object, it must first initilized. Here's an example of creating an object using JavaScript:
+
+          <pre><code data-language="javascript">// Here, we demo a prototype for an object titled "car". This first section is called a "constructor function".
+// It allows for us to assign values to the object's propeties.
+
+function Car(make, model, year, color) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+  this.color = color;
+  }
+
+// New objects can be created that follow the constructor function.
+
+var myCar = new Car("Honda", "Civic", "2004", "black");
+var myWifesCar = new Car("Chevrolet", "Avalanche", "2005", "blue");
+
+// Here's an example of displaying this newly assigned information in an HTML format:
+
+document.getElementById("demo").innerHTML = "I own a " + myCar.color + " " + myCar.make + " " + myCar.model + "."
+  + " He's a little bit older, he was made in " + myCar.year + "."
+  + " My wife's car is a " + myWifesCar.color + " " + myWifesCar.make + " " + myWifesCar.model + "."
+  + " She's got one year on my " +  myCar.model + "! Her's was made in " + myWifesCar.year + ".";</code></pre>
+
+        <h3>Output:</h3>
+        <script>
+            function Car(make, model, year, color) {
+                this.make = make;
+                this.model = model;
+                this.year = year;
+                this.color = color;
+            }
+
+            var myCar = new Car("Honda", "Civic", "2004", "black");
+            var myWifesCar = new Car("Chevrolet", "Avalanche", "2005", "blue");
+
+            function printCar() {
+            document.getElementById("demo").innerHTML = "I own a " + myCar.color + " " + myCar.make + " " + myCar.model + "."
+                + " He's a little bit older, he was made in " + myCar.year + "."
+                + " My wife's car is a " + myWifesCar.color + " " + myWifesCar.make + " " + myWifesCar.model + "."
+                + " She's got one year on my " +  myCar.model + "! Her's was made in " + myWifesCar.year + ".";
+              }
+        </script>
+
+        <button onclick="printCar()">Click me</button>
+
+      <pre><code id="demo">
+      </code></pre>
+
+      <h3>Sources:</h3>
+        <ul>
+          <li><a href="http://www.w3schools.com/js/js_objects.asp">W3 Schools</a></li>
+          <li><a href="http://www.devx.com/projectcool/Article/19993">DevX</a></li>
+        </ul>
+
+      <footer class="site-footer">
+
+        <h6><span class="site-footer-credits"><a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span></h6>
+      </footer>
+
+    </section>
+
+  
+  </body>
+<!--	<body class="funtions">
 		<div class="container body-content">
 			<div class="row">
                 <div class="col-md-12">
@@ -72,12 +207,12 @@
 				<div class="row">
 					<div class="col-md-12"><hr /></div>
 				</div>
-               <!-- <div class="col-md-12">
+               <div class="col-md-12">
 					<h3>Rectangle and Shape Inheritance objects and functions</h3>
 					<p id="results1"></p>
 					<p id="results2"></p>
 					<p id="results3"></p>
-                </div> -->
+                </div> 
 	        
 	        <pre><code data-language="javascript">
 		
@@ -132,7 +267,7 @@
 	
 	
 		
-	</body>
+	</body>-->
 
 	<script>
 		/* Inheritance and Object Create with Methods and Instantiation */
