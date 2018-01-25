@@ -74,6 +74,45 @@
 					<p id="results2"></p>
 					<p id="results3"></p>
                 </div>
+				
+		<pre><code data-language="javascript">
+			<script>
+			// Instantiation of empObj with predefined data
+			var empObj = {
+						 "employees":
+							[
+								{"firstName":"Ricardo", "lastName":"Ahuire"},
+								{"firstName":"Jayton", "lastName":"Birch"}, 
+								{"firstName":"Ali", "lastName":"Cope"},
+								{"firstName":"Skyler", "lastName":"Hildreth"}
+							]
+						};
+			function getEmployee() {
+				var resultsValue = "";
+			
+				// Setting a Variable
+				var stringCheck = document.getElementById('NumberA').value;
+				console.log(stringCheck);
+				// Checking to see if the variable is a number or not
+				if(!isNaN(stringCheck) ) {
+					if( (stringCheck - 1) < empObj.employees.length && (stringCheck - 1) >= 0) {
+						// Accessing the firstname property member in the employees array in the empObj
+						resultsValue = empObj.employees[stringCheck - 1].firstName + " " + empObj.employees[stringCheck - 1].lastName;
+						//empObj.employees[stringCheck - 1].firstName = "Bob"
+					}
+					else {
+						resultsValue = "Number out of array bounds. You Entered |" + stringCheck + "|";
+					}
+				}
+				else {
+					resultsValue = "You did not Enter a pure Integer. You Entered |" + stringCheck + "|";
+				}
+				console.log(resultsValue);
+				document.getElementById("results4").innerHTML = resultsValue;
+			}
+		</script>
+		</code></pre>
+	
                 <div class="col-md-12">
 					<label>Enter a Number: </lable> <input id="NumberA" type="text" value=""></input><br />
 					<button onclick="getEmployee()">Get Employee</button><br /><br />
