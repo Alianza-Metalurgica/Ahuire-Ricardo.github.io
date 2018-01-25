@@ -17,10 +17,33 @@ body {
     background-color: #ffbbad;	
 }
 
-pre > code {
-    white-space: pre;
-    margin-left: -1.00em;
-    display: block;
+code {
+    border: 1px solid #eaeaea;
+    margin: 0px 2px;
+    padding: 0px 5px;
+    font-size: 12px;
+}
+
+pre code {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+pre, code {
+    font-family: Consolas, 'Liberation Mono', Courier, monospace;
+    color: #333;
+    background: #f8f8f8;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+pre, pre code {
+    font-size: 13px;
 }
 
 h1 {
