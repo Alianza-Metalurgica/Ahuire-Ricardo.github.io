@@ -17,6 +17,12 @@ body {
     background-color: #ffbbad;	
 }
 
+pre > code {
+    white-space: pre;
+    margin-left: -1.00em;
+    display: block;
+}
+
 h1 {
     font-size: 2rem;
     text-align: center;
