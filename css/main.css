@@ -1,4 +1,4 @@
-/*main {
+main {
     background-color: #ffbbad;
 }
 blockquote {
@@ -44,7 +44,7 @@ nav {
 
 footer {
     font-size:0.75rem;
-}*/
+}
 
 html {
     font-size: 10px;
