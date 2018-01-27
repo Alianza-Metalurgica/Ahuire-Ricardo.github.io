@@ -50,7 +50,7 @@
 					resultsValue = "You did not Enter a pure Integer. You Entered |" + stringCheck + "|";
 				}
 				console.log(resultsValue);
-				document.getElementById("results4").innerHTML = resultsValue;
+				document.getElementById("results").innerHTML = resultsValue;
 			}
 		</script>
 
@@ -64,22 +64,7 @@
      <nav id="primary_nav_wrap">
           <ul>
             <li class="current-menu-item"><a href="https://ahuire-ricardo.github.io">Home</a></li>
-           <!--  <li><a href="#">Topics</a>
-              <ul>
-                <li><a href="json.html">JSON</a></li>
-                <li><a href="js-objects.html">JavaScript Objects</a></li>
-                <li><a href="dom-manipulation.html">DOM Manipulation</a></li>
-                <li><a href="css3-transitions.html">CSS 3 Transitions</a></li>
-                <li><a href="css3-animations.html">CSS 3 Animations</a></li>
-                <li><a href="local-storage.html">Local Storage</a></li>
-                <li><a href="ajax.html">AJAX</a></li>
-              </ul>
-                </li>
-            <li><a href="team-meetings.html">Team Meetings</a>
-            </li>
-          </nav> -->
-
-
+           
     </section>
 
     <section class="main-content">
@@ -129,7 +114,7 @@
 
               <p>All cars have the same <strong>properties</strong>, but the property values differ from car to car.</p>
               <p>All cars have the same <strong>methods</strong>, but the methods are performed at different times.</p>
-	      <p>Here is an example of using objects in javascript.</p>
+	      <p>Here is an example of using objects in javascript:</p>
         </blockquote>
           
         <pre><code data-language="javascript">
@@ -168,7 +153,18 @@ function getEmployee() {
 }
 		
 	 </code></pre>
+	 
         <h3>Output:</h3>
+	
+	 <div class="col-md-12">
+		<label>Enter a Number: </lable> <input id="NumberA" type="text" value=""></input><br />
+		<button onclick="getEmployee()">Get Employee</button><br /><br />
+	</div>
+	<div class="col-md-12">
+		<h3>Properties</h3>
+		<p id="results4"></p>
+	</div>
+	
         <script>
             function Car(make, model, year, color) {
                 this.make = make;
@@ -273,7 +269,7 @@ function getEmployee() {
                 <div class="col-md-12">
 					<h3>Properties</h3>
 					<p id="results4"></p>
-				</div>
+		</div>
             </div>
         </div>
 	
