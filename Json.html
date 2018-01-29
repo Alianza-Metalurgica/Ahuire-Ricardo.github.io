@@ -68,9 +68,12 @@
     </section>
 
     <section class="main-content">
-       <h2>What Are Json?</h2>
-        <p>Objects in JavaScript, just as in many other programming languages, can be compared to objects in real life. The concept of objects in
-	   JavaScript can be understood with real life, tangible objects.</p>
+       <h2>What is a Json?</h2>
+        <p>JSON (JavaScript Object Notation) is a lightweight data-interchange format. It is easy for humans to read and write. 
+	   It is easy for machines to parse and generate. It is based on a subset of the JavaScript Programming Language,
+	   Standard ECMA-262 3rd Edition - December 1999. JSON is a text format that is completely language independent but uses conventions that are
+	   familiar to programmers of the C-family of languages, including C, C++, C#, Java, JavaScript, Perl, Python, and many others. These properties
+	   make JSON an ideal data-interchange language.</p>
         <p>In JavaScript, an object is a standalone entity, with properties and type. Compare it with a cup, for example. A cup is an object, with 
 	   properties. A cup has a color, a design, weight, a material it is made of, etc. The same way, JavaScript objects can have properties, which 
 	   define their characteristics. </p>
@@ -198,78 +201,7 @@ function getEmployee() {
 
   
   </body>
-<!--	<body class="funtions">
-		<div class="container body-content">
-			<div class="row">
-                <div class="col-md-12">
-                    <h1>Ricardo Ahuire</h1>
-                    <h2>CIT 261 - Object Creation Functions, Inheritance, Properties, Methods, Instantiation</h2>
-                    <a href="index.html">Home</a><br/><br/>
-                </div>
-				<div class="row">
-					<div class="col-md-12"><hr /></div>
-				</div>
-               <div class="col-md-12">
-					<h3>Rectangle and Shape Inheritance objects and functions</h3>
-					<p id="results1"></p>
-					<p id="results2"></p>
-					<p id="results3"></p>
-                </div> 
-	        
-	        <pre><code data-language="javascript">
-		
-			
-			// Instantiation of empObj with predefined data
-			var empObj = {
-						 "employees":
-							[
-								{"firstName":"Ricardo", "lastName":"Ahuire"},
-								{"firstName":"Jayton", "lastName":"Birch"}, 
-								{"firstName":"Ali", "lastName":"Cope"},
-								{"firstName":"Skyler", "lastName":"Hildreth"}
-							]
-						};
-			function getEmployee() {
-				var resultsValue = "";
-			
-				// Setting a Variable
-				var stringCheck = document.getElementById('NumberA').value;
-				console.log(stringCheck);
-				// Checking to see if the variable is a number or not
-				if(!isNaN(stringCheck) ) {
-					if( (stringCheck - 1) < empObj.employees.length && (stringCheck - 1) >= 0) {
-						// Accessing the firstname property member in the employees array in the empObj
-						resultsValue = empObj.employees[stringCheck - 1].firstName + " " + empObj.employees[stringCheck - 1].lastName;
-						//empObj.employees[stringCheck - 1].firstName = "Bob"
-					}
-					else {
-						resultsValue = "Number out of array bounds. You Entered |" + stringCheck + "|";
-					}
-				}
-				else {
-					resultsValue = "You did not Enter a pure Integer. You Entered |" + stringCheck + "|";
-				}
-				console.log(resultsValue);
-				document.getElementById("results4").innerHTML = resultsValue;
-			}
-		
-	 </code></pre>
-				
-		
-                <div class="col-md-12">
-					<label>Enter a Number: </lable> <input id="NumberA" type="text" value=""></input><br />
-					<button onclick="getEmployee()">Get Employee</button><br /><br />
-                </div>
-                <div class="col-md-12">
-					<h3>Properties</h3>
-					<p id="results4"></p>
-		</div>
-            </div>
-        </div>
-	
-	
-		
-	</body>-->
+
 
 	<script>
 		/* Inheritance and Object Create with Methods and Instantiation */
