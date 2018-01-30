@@ -28,8 +28,12 @@
 						['Ricardo Ahuire','Jayton Birth','Ali Cope','Skyler Hildreth'],
 				     };
 			
-			let json = JSON.stringify(stuObj);
+			function getEmployee() {
+				let json = JSON.stringify(stuObj);
 
+				console.log(typeof json);
+				document.getElementById("results").innerHTML = json;
+			}
 			//alert(typeof json); // we've got a string!
 
 			//alert(json)
