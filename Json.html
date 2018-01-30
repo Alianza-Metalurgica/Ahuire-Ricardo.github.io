@@ -31,7 +31,7 @@
 			function getEmployee() {
 				let json = JSON.stringify(stuObj);
 
-				document.getElementById("results").innerHTML = json;
+				document.getElementById("results").innerHTML = 'Json File: ' + json;
 			}
 			//alert(typeof json); // we've got a string!
 
@@ -45,7 +45,9 @@
 			function getJson() {
 				var studString = JSON.parse(stuJson);
 
-				document.getElementById("resultString").innerHTML = 'university: ' + studString.university;
+				document.getElementById("resultString").innerHTML = 'University: ' + studString.university;
+				document.getElementById("resultString1").innerHTML = 'Teacher: ' + studString.teacher;
+				document.getElementById("resultString2").innerHTML = 'class: ' + studString.class;
 			}
 			//alert(typeof json); // we've got a string!
 
