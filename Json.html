@@ -47,7 +47,7 @@
 
 				document.getElementById("resultString").innerHTML = 'University: ' + studString.university;
 				document.getElementById("resultString1").innerHTML = 'Teacher: ' + studString.teacher;
-				document.getElementById("resultString2").innerHTML = 'class: ' + studString.class;
+				document.getElementById("resultString2").innerHTML = 'Class: ' + studString.class;
 			}
 			//alert(typeof json); // we've got a string!
 
@@ -113,7 +113,7 @@ var stuObj = {
      };
 
 function getEmployee() {
-let json = JSON.stringify(stuObj);
+let json = JSON.<b>stringify</b>(stuObj);
 
 document.getElementById("results").innerHTML = 'Json File: ' + json;
 }
@@ -136,7 +136,7 @@ document.getElementById("results").innerHTML = 'Json File: ' + json;
 var stuJson = '{"university":"BYU Idaho","teacher":"Brother Baer","class":"CIT-261 #03"}';
 			
 function getJson() {
-	var studString = JSON.parse(stuJson);
+	var studString = JSON.<b>parse</b>(stuJson);
 
 	document.getElementById("resultString").innerHTML = 'University: ' + studString.university;
 	document.getElementById("resultString1").innerHTML = 'Teacher: ' + studString.teacher;
