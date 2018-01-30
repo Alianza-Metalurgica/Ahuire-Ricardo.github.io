@@ -31,8 +31,24 @@
 			function getEmployee() {
 				let json = JSON.stringify(stuObj);
 
-				document.getElementById(typeof json);
 				document.getElementById("results").innerHTML = json;
+			}
+			//alert(typeof json); // we've got a string!
+
+			//alert(json)
+		</script>
+		
+		<script>
+			// Instantiation of empObj with predefined data
+			var stuJson = '{"university":"BYU Idaho",
+					"teacher":"Brother Baer",
+					"class":"CIT-261 #03",
+					"students":["Ricardo Ahuire","Jayton Birth","Ali Cope","Skyler Hildreth"]}';
+			
+			function getJson() {
+				var studString = JSON.parse(stuJson);
+
+				document.getElementById("resultString").innerHTML = studString.university;
 			}
 			//alert(typeof json); // we've got a string!
 
@@ -114,8 +130,31 @@ document.getElementById("results").innerHTML = json;
 		
 		<a href="https://jsonlint.com">Jsolint (to validate Json file)</a>
 	</div>
-	
-               
+	    
+	<pre><code data-language="javascript">	
+// Instantiation of empObj with predefined data
+var stuJson = '{"university":"BYU Idaho",
+		"teacher":"Brother Baer",
+		"class":"CIT-261 #03",
+		"students":["Ricardo Ahuire","Jayton Birth","Ali Cope","Skyler Hildreth"]}';
+
+function getJson() {
+	var studString = JSON.parse(stuJson);
+
+	document.getElementById("resultString").innerHTML = studString.university;
+}
+
+      </code></pre>
+	    
+	<div class="col-md-12">
+		<button onclick="getJson()">Run Script</button><br /><br />
+	</div>
+	<div class="col-md-12">
+		<h3>Results</h3>
+		<p id="resultString"></p>
+		
+	</div>	    
+	    
       <h3>Sources:</h3>
         <ul>
           <li><a href="http://www.w3schools.com/js/js_objects.asp">W3 Schools</a></li>
@@ -133,52 +172,5 @@ document.getElementById("results").innerHTML = json;
   </body>
 
 
-	<script>
-		/* Inheritance and Object Create with Methods and Instantiation */
-		/* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create */
-		// Shape - superclass
-		function Shape() {
-			this.x = 0;
-			this.y = 0;
-		}
-		// superclass method
-		Shape.prototype.move = function(x, y) {
-			this.x += x;
-			this.y += y;
-			console.info('Shape moved.');
-		};
-		// Rectangle - subclass
-		function Rectangle() {
-			Shape.call(this); // call super constructor.
-		}
-		// subclass extends superclass
-		Rectangle.prototype = Object.create(Shape.prototype);
-		Rectangle.prototype.constructor = Rectangle;
-		var rect = new Rectangle();
-		console.log('Is rect an instance of Rectangle?', rect instanceof Rectangle); // true
-		console.log('Is rect an instance of Shape?', rect instanceof Shape); // true
-		rect.move(1, 1); // Outputs, 'Shape moved.'
-		
-		/* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create */
-		document.getElementById("results1").innerHTML = "Is rect an instance of Rectangle? " + (rect instanceof Rectangle);
-		document.getElementById("results2").innerHTML = "Is rect an instance of Shape? " + (rect instanceof Shape);
-		var address = {
-			street: "",
-			city: "",
-			state: "",
-			postalCode: "",
-			get getAddress() {
-				return street + "" + city + "" + state + "" + postalCode;
-			},
-			set setAddress(parseAddress) {
-				var parts = parseAddress.split(", ");
-				this.street = parts[0] || "";
-				this.city = parts[1] || "";
-				this.state = parts[2] || "";
-				this.postalCode = parts[3] || "";
-			}
-		}
-		address.setAddress = "";
-		document.write(address.getAddress);
-	</script>
+	
 </html>
