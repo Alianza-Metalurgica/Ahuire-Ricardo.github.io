@@ -81,23 +81,24 @@
 	    <li>JSON.<b>parse to</b> convert JSON back into an object.</li>
 	  </ul>
                    
+	
         <pre><code data-language="javascript">
-<script>
-	// Instantiation of empObj with predefined data
-	var stuObj = {
-			 university:'BYU Idaho',
-			 teacher:'Brother Baer',
-			 class: 'CIT-261 #03',
-			 students:
-				['Ricardo Ahuire','Jayton Birth','Ali Cope','Skyler Hildreth'],
-		     };
 
-	let json = JSON.stringify(stuObj);
+// Instantiation of empObj with predefined data
+var stuObj = {
+		 university:'BYU Idaho',
+		 teacher:'Brother Baer',
+		 class: 'CIT-261 #03',
+		 students:
+			['Ricardo Ahuire','Jayton Birth','Ali Cope','Skyler Hildreth'],
+	     };
 
-	alert(typeof json); // we've got a string!
+let json = JSON.stringify(stuObj);
 
-	alert(json)
-</script>
+alert(typeof json); // we've got a string!
+
+alert(json)
+
 		
 	 </code></pre>
 	 
